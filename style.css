@@ -1,16 +1,53 @@
+* {
+    box-sizing: border-box; margin: 0;
+}
 html{
     background-color: black;
 }
-header h1{
-    text-align: center;
+h1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 nav{
-    width: 100%;
-    background-color: grey;
+    position: absolute;
+    overflow: hidden;
+    width: 5rem;
+    height: 100%;
+    border: solid 1px white;
+    transition: 200ms;
 }
 nav li{
+    position: relative;
+    height: 3em;
+    margin-top: 2em;
+}
+nav li svg{
+    color: white;
+}
+nav:hover{
+    width: 15rem;
+    transition: 200ms;
+}
+nav:hover .toyprojecticon::after{
+    content: "Toy projects";
     list-style-type: none;
-    margin: 1em;
-    text-align: center;
+    color: white;
+    margin-left: 2em;
+    transition: 50ms ;
+}
+nav:hover .QMicon::after{
+    content: "Quantum mechanics";
+    list-style-type: none;
+    color: white;
+    margin-left: 2em;
+    transition: 50ms;
+}
+nav li:hover{
+    cursor: pointer;
+    font-size: large;
 }
