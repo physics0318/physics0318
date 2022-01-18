@@ -4,27 +4,69 @@
 html{
     background-color: black;
 }
-h1{
-    position: absolute;
+body{
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+#displayer{
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#displayer > *{
+    opacity: 0;
+}
+#displayer .display{
+    position: absolute;
+    color: white;
+    opacity: 100%;
+    transition: 200ms;
+}
+#displayer #infoCard{
+    position: absolute;
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    width: 20rem;
+    height: 10rem;
+    border: solid 1px white;
+    border-radius: 10%;
+    transition: 100ms;
+}
+#infoCard .closebutton{
+    position: absolute;
+    right: 1rem;
+    top: -2.2rem;
+}
+#infoCard .closebutton p{
+    font-size: 1.5rem;
     color: white;
 }
+#infoCard ul{
+    padding: 1em;
+}
+#infoCard ul li{
+    margin: 0.5em;
+    list-style-type: none;
+}
 nav{
-    position: absolute;
-    overflow: hidden;
     width: 5rem;
     height: 100%;
     border: solid 1px white;
     transition: 200ms;
+    z-index: 10;
 }
 nav li{
     position: relative;
+    display: flex;
+    align-items: center;
     height: 3em;
     margin-top: 2em;
+    padding: 1em;
 }
 nav li svg{
     color: white;
@@ -33,21 +75,35 @@ nav:hover{
     width: 15rem;
     transition: 200ms;
 }
-nav:hover .toyprojecticon::after{
+nav:hover #toyprojecticon::after{
     content: "Toy projects";
     list-style-type: none;
     color: white;
-    margin-left: 2em;
-    transition: 50ms ;
+    margin-left: 1em;
+    transition: 50ms;
 }
-nav:hover .QMicon::after{
+nav:hover #QMicon::after{
     content: "Quantum mechanics";
     list-style-type: none;
     color: white;
-    margin-left: 2em;
+    margin-left: 1em;
     transition: 50ms;
 }
+nav:hover #infoIcon::after{
+    content: "Personal info";
+    list-style-type: none;
+    color: white;
+    margin-left: 1em;
+    transition: 50ms;
+}
+
 nav li:hover{
     cursor: pointer;
-    font-size: large;
+    border: solid 1px white;
+    transition: 200ms;
+}
+#infoCard div:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 50ms;
 }

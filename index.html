@@ -8,10 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Seungjoon's blog</h1>
-    <nav>
-        <li class="toyprojecticon"><i class="fab fa-github fa-lg"></i></li>
-        <li class="QMicon"><i class="fas fa-atom fa-lg"></i></li>
+    <nav id="nav">
+        <li id="toyprojecticon" onclick=window.open("https://github.com/physics0318")><i class="fab fa-github fa-lg"></i></li>
+        <li id="QMicon"><i class="fas fa-atom fa-lg"></i></li>
+        <li id="infoIcon"><i class="far fa-address-card"></i></li>
     </nav>
+    <div id="displayer">
+        <h1 class="display" id="title">Seungjoon's blog</h1>
+        <div id="infoCard">
+            <div class="closebutton"><p>X</p></div>
+            <ul>
+                <li>name: Seungjoon Yang</li>
+                <li>email: scisyhpscisyhp@gmail.com</li>
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="script.js" async></script>
 </html>
