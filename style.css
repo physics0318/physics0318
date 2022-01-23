@@ -9,6 +9,9 @@ body{
     width: 100vw;
     height: 100vh;
 }
+p{
+    color: white;
+}
 #displayer{
     position: relative;
     display: flex;
@@ -20,11 +23,45 @@ body{
 #displayer > *{
     opacity: 0;
 }
+#displayer #projectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+#projectContainer #pjtClose{
+    border: solid white 1px;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    margin-top: 2em;
+    transition: 50ms;
+}
+#projectContainer #pjtClose:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 100ms;
+}
+#projectContainer .project{
+    width: 300px;
+    height: 5em;
+    border: solid white 1px;
+    border-radius: 1em;
+    margin-top: 2rem;
+    padding: 1em;
+    transition: 100ms;
+}
+#displayer #projectContainer .project:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 #displayer .display{
     position: absolute;
     color: white;
     opacity: 100%;
     transition: 200ms;
+    z-index: 10;
 }
 #displayer #infoCard{
     position: absolute;
@@ -44,7 +81,6 @@ body{
 }
 #infoCard .closebutton p{
     font-size: 1.5rem;
-    color: white;
 }
 #infoCard ul{
     padding: 1em;
