@@ -1,10 +1,14 @@
 I’m Seungjoon Yang
 
-I’m studying physics, mathematics, and programming at Dongguk University.
+I'm a graduate student of Seoul National University.
 
-I’m currently interested in machine learning.
+I graduated Dongguk University and I majored physics and mathematics from there.
+
+I’m currently studying condensed matter physics theory.
+I don't use numerical method on my research yet, but sometimes I make simple toy project.
 
 email: scisyhpscisyhp@gmail.com
+group homepage: https://physics.snu.ac.kr/fischer/
 
 <!---
 physics0318/physics0318 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
